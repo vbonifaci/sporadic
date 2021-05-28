@@ -15,25 +15,25 @@ If you do use these algorithms, please cite the paper detailing them:
 
 == Compilation 
 
-Use 'make' to build the suite. The tools have been tested
+Use `make` to build the suite. The tools have been tested
 under Mac OS X and Ubuntu Linux. 
 
 
 == Available tools 
 
-* 'feasible' performs feasibility analysis based on the classical
+* `feasible` performs feasibility analysis based on the classical
   (abstract) definition of a feasible task system;
   
-* 'onlfeas' performs online feasibility analysis; it is more 
-  restrictive than 'feasible' since the answer is only positive
+* `onlfeas` performs online feasibility analysis; it is more 
+  restrictive than `feasible` since the answer is only positive
   if there exists some ONLINE (and memoryless) algorithm that correctly
   schedules the task set, see the cited paper for details; 
   
-* 'gedf' performs Global-EDF schedulability analysis;
+* `gedf` performs Global-EDF schedulability analysis;
 
-* 'gfp' performs Global-FP schedulability analysis;  
+* `gfp` performs Global-FP schedulability analysis;  
 
-* 'llf' performs Global-LLF schedulability analysis. 
+* `llf` performs Global-LLF schedulability analysis. 
 
 By implementing new versions of the function prefer() in schedtst.cpp,
 one can perform schedulability analysis of ANY online scheduling 
@@ -61,13 +61,13 @@ integers with ci ≤ di ≤ ti.
 
 The last task may be followed by arbitrary text, since the tools stop
 parsing the input there. The input is given through the standard input 
-channel. See the 'data' directory for some example tests. 
+channel. See the `data` directory for some example tests. 
 
-The option '-q' can be used to suppress some messages. In order to 
+The option `-q` can be used to suppress some messages. In order to 
 suppress all messages, the error channel (channel 2) should also be 
 redirected to /dev/null. 
 
-The script maketest.sh runs some tests on the 'data' input files. 
+The script maketest.sh runs some tests on the `data` input files. 
 
 
 == KNOWN LIMITATIONS 
