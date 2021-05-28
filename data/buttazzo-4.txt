@@ -1,0 +1,8 @@
+1
+3
+1 4 4
+2 6 6
+3 10 10
+
+A task set schedulable by Rate Monotonic on 1 processor. 
+Source: Buttazzo 1997, p. 108. 

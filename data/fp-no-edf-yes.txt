@@ -1,0 +1,10 @@
+2
+4
+2 4 4
+2 4 4
+2 4 4
+2 4 4
+
+Example of a task set that is not FP-schedulable (by any priority
+ordering), but is EDF-schedulable. 
+

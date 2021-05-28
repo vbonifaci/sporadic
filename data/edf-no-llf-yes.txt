@@ -1,0 +1,8 @@
+2
+3
+5 10 10
+5 10 10
+10 11 11
+
+A task system that is schedulable by LLF but not by EDF on 2 processors.
+Source: Leung (1989). 

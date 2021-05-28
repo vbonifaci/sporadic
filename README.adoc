@@ -1,0 +1,98 @@
+= Exact Multiprocessor Feasibility/Schedulability Tools
+= by V. Bonifaci <vincenzo.bonifaci AT iasi.cnr.it>
+
+In this directory, you can find C++ programs that can be used to
+perform exact feasibility and schedulability analysis of (tiny)
+multiprocessor sporadic task sets with constrained deadlines.
+
+If you do use these algorithms, please cite the paper detailing them:
+
+	V. Bonifaci, A. Marchetti-Spaccamela, Feasibility analysis of 
+	sporadic real-time multiprocessor task systems, Algorithmica 
+	63(4):763--780, 2012. 
+      
+
+== Compilation 
+
+Use 'make' to build the suite. The tools have been tested
+under Mac OS X and Ubuntu Linux. 
+
+
+== Available tools 
+
+* 'feasible' performs feasibility analysis based on the classical
+  (abstract) definition of a feasible task system;
+  
+* 'onlfeas' performs online feasibility analysis; it is more 
+  restrictive than 'feasible' since the answer is only positive
+  if there exists some ONLINE (and memoryless) algorithm that correctly
+  schedules the task set, see the cited paper for details; 
+  
+* 'gedf' performs Global-EDF schedulability analysis;
+
+* 'gfp' performs Global-FP schedulability analysis;  
+
+* 'llf' performs Global-LLF schedulability analysis. 
+
+By implementing new versions of the function prefer() in schedtst.cpp,
+one can perform schedulability analysis of ANY online scheduling 
+algorithm that is both preemptable and predictable. 
+
+
+== Input format 
+
+The input format of all tools is the same: 
+--------------
+m
+n
+c1 d1 t1
+c2 d2 t2
+...
+cn dn tn
+--------------
+where:
+
+* m is the number of (identical) processors that are available
+* n is the number of tasks (n <= 16)
+* ci, di, ti are the WCET, relative deadline, and minimum inter-
+arrival time of the ith task. All these numbers should be positive 
+integers with ci <= di <= ti. 
+
+The last task may be followed by arbitrary text, since the tools stop
+parsing the input there. The input is given through the standard input 
+channel. See the 'data' directory for some example tests. 
+
+The option '-q' can be used to suppress some messages. In order to 
+suppress all messages, the error channel (channel 2) should also be 
+redirected to /dev/null. 
+
+The script maketest.sh runs some tests on the 'data' input files. 
+
+
+== KNOWN LIMITATIONS 
+
+Due to their high complexity, the tests only terminate for a small 
+number of tasks and with tiny numerical parameters. The maximum number 
+of tasks is hardwired to 16, but it is common to run out of memory 
+(or time) much earlier. 
+
+
+== Other relevant information 
+
+This software is provided 'as is' with no guarantees, please use
+at your own risk. 
+
+
+== Acknowledgment 
+
+Many thanks to Marko Bertogna for encouragement and feedback.
+
+
+== Author 
+
+Vincenzo Bonifaci <vincenzo.bonifaci AT iasi.cnr.it>
+
+
+
+
+

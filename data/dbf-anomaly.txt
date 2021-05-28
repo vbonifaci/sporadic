@@ -1,0 +1,10 @@
+2
+3
+2 2 4
+1 1 2
+1 1 2
+
+Example of a task set that is infeasible on 2 processors even though
+its DBF-load is exactly 2. 
+Source: Bertogna 2008. 
+

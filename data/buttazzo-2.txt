@@ -1,0 +1,9 @@
+1
+3
+3 6 6
+2 8 8
+5 10 10
+
+An (infeasible) task set not schedulable by EDF on 1 processor. 
+Source: Buttazzo 1997, p. 105. 
+

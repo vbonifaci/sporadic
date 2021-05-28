@@ -1,0 +1,10 @@
+2
+3
+2 3 6
+2 3 6
+3 4 6
+
+
+Example of a feasible and online feasible system for 
+which EDF is not optimal on 2 processors. 
+
