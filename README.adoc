@@ -7,10 +7,10 @@ multiprocessor sporadic task sets with constrained deadlines.
 
 If you do use these algorithms, please cite the paper detailing them:
 
-	V. Bonifaci, A. Marchetti-Spaccamela, 
-	https://link.springer.com/article/10.1007/s00453-011-9505-6[Feasibility analysis of 
-	sporadic real-time multiprocessor task systems], Algorithmica 
-	63(4):763--780, 2012. 
+* V. Bonifaci, A. Marchetti-Spaccamela, 
+  https://link.springer.com/article/10.1007/s00453-011-9505-6[Feasibility analysis of 
+  sporadic real-time multiprocessor task systems], Algorithmica 
+  63(4):763--780, 2012. 
       
 
 == Compilation 
