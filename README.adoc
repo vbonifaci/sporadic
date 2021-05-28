@@ -1,7 +1,7 @@
 = Exact Multiprocessor Feasibility/Schedulability Tools
 = by V. Bonifaci <vincenzo.bonifaci AT iasi.cnr.it>
 
-In this directory, you can find C++ programs that can be used to
+In this repository, you can find C++ programs that can be used to
 perform exact feasibility and schedulability analysis of (tiny)
 multiprocessor sporadic task sets with constrained deadlines.
 
@@ -53,10 +53,10 @@ cn dn tn
 where:
 
 * m is the number of (identical) processors that are available
-* n is the number of tasks (n <= 16)
+* n is the number of tasks (n ≤ 16)
 * ci, di, ti are the WCET, relative deadline, and minimum inter-
 arrival time of the ith task. All these numbers should be positive 
-integers with ci <= di <= ti. 
+integers with ci ≤ di ≤ ti. 
 
 The last task may be followed by arbitrary text, since the tools stop
 parsing the input there. The input is given through the standard input 
